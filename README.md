@@ -2,40 +2,25 @@
 
 ### What's this project about?
 
-Deploy a Smart Contract on any Ethereum Testnet using Remix IDE. 
+This Smart Contract contains a simple approach to read/write functions. 
 
-#### Requirements 
+Main Goal: This smart contract will allow you to store an array of Person and their favorite number. Also, to recover and search for a specific favorite number.
 
-- Use REMIX IDE
-- Update this README with a brief explanation of the project. For example, what functions it has, what Testnet did you used.   
-- Comment your code so your teammates at Zircon can understand it. 
-- Use external libraries if you want. 
+#### Write Functions: 
 
-### List of resources
+- Store: Receives as parameter the person's name and his/her favorite number. Parameters: tuple(string,uint256 
 
-#### General
+![image](https://user-images.githubusercontent.com/60369910/185639835-af995cce-4819-41be-8de3-7df79c096238.png)
 
-- If you are short of ideas you can follow this tutorial [Intro to Remix & Solidity | Chainlink Engineering Tutorials](https://www.youtube.com/watch?v=JWJWT9cwFbo&ab_channel=Chainlink)
-- [Chainlink Faucet](https://faucets.chain.link/)
-- [Ethereum Testnet Faucets](https://goethereumbook.org/faucets/)
+#### Read Functions: 
 
-## Unidad 3: Ethereum | Remix IDE -Versión en español- 🚀
+- Retrieve: Each of the person you have entered in the Store method are saved in an array. With this method, you can enter the position of the person you need to recover. For instance, if you enter 0, you will recover the first person you entered. Then, 1 is going to be the second and so on. Return Type: tuple(string,uint256)
 
-### ¿De qué se trata este proyecto?
+- SearchFavoriteNumberPerPerson: You can enter the person name you need to recover his/her favorite number. Parameters: name of the person (string). Return Type:  tuple(string,uint256)
 
-Despliega un contrato inteligente en cualquier Testnet de Ethereum usando Remix. 
+Test Network: I used a connection to my Metamask provider. The network selected was Ropsten. 
 
-#### Requisitos
+Contract was deployed at : https://ropsten.etherscan.io/address/0x4e1b0353157700252f95b5c20d990f4a3ba71760#readContract . I have decompiled the deployed contract so you can see the full code and interact with it. 
 
-- Usa Remix IDE
-- Actualiza este README con una breve explicación del proyecto. Por ejemplo, qué funciones tiene, qué testnet utilizaste. 
-- Comenta tu código para que tus compañeros de Zircon puedan entenderlo.
-- Utiliza bibliotecas externas si quieres.
 
-### Lista de recursos
-
-#### General
-
-- Si estas sin ideas, puedes seguir el siguiente tutorial [Intro to Remix & Solidity | Chainlink Engineering Tutorials](https://www.youtube.com/watch?v=JWJWT9cwFbo&ab_channel=Chainlink)
-- [Chainlink Faucet](https://faucets.chain.link/)
-- [Ethereum Testnet Faucets](https://goethereumbook.org/faucets/)
+![image](https://user-images.githubusercontent.com/60369910/185641812-2e439b60-0951-4543-af20-8d80cadf11c8.png)
